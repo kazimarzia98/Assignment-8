@@ -6,9 +6,32 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {},
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+
+          "primary": "#ff007a",
+
+          "secondary": "#554e00",
+
+          "accent": "#00a8ff",
+
+          "neutral": "#170d02",
+
+          "base-100": "#fffdff",
+
+          "info": "#0095c7",
+
+          "success": "#a2d600",
+
+          "warning": "#ffad00",
+
+          "error": "#ff7882",
+        },
+      },
+    ],
   },
-  plugins:[daisyui],
+  plugins: [daisyui],
 }
 
