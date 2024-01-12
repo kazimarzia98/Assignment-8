@@ -6,7 +6,7 @@
         "person": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "date": "Mar 14 (4 days ago)",
         "title": "How to get your first job as a self-taught programmer - 01",
-        "time": "5"
+        "time": 5
     },
     {
         "id": "002",
@@ -15,7 +15,7 @@
         "person": "https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "date": "Mar 14 (4 days ago)",
         "title": "How to get your first job as a self-taught programmer - 02",
-        "time": "10"
+        "time": 10
     },
     {
         "id": "003",
@@ -24,7 +24,7 @@
         "person": "https://images.unsplash.com/photo-1566753323558-f4e0952af115?q=80&w=1921&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "date": "Mar 14 (4 days ago)",
         "title": "How to get your first job as a self-taught programmer - 03",
-        "time": "12"
+        "time": 12
     },
     {
         "id": "004",
@@ -33,6 +33,6 @@
         "person": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "date": "Mar 14 (4 days ago)",
         "title": "How to get your first job as a self-taught programmer - 04",
-        "time": "15"
+        "time": 15
     }
 ]
