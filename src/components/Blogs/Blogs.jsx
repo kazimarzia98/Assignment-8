@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleBLog from '../SingleBlog/SingleBLog';
 
-const Blogs = () => {
+const Blogs = ({handleReadingTime}) => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
@@ -17,6 +17,7 @@ const Blogs = () => {
                     <SingleBLog
                     key={blog.id}
                     blog={blog}
+                    handleReadingTime={handleReadingTime}
                     ></SingleBLog>
                     // console.log(blog);
                 )
