@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import Header from './components/Header/Header';
 import Blogs from './components/Blogs/Blogs';
 import SideCart from './components/SideCart/SideCart';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const App = () => {
   const [readTime, setReadTime] = useState('');
@@ -29,6 +33,7 @@ const App = () => {
     // setMarkedBlog(boorMark);
     const newMarked = [...markedBlog , bookMark];
     setMarkedBlog(newMarked);
+    toast("Can't add your bookmark");
 
 
   }
@@ -44,6 +49,7 @@ const App = () => {
         <div className='sideCart'>
           <SideCart readTime={readTime} markedBlog={markedBlog}></SideCart>
         </div>
+        <ToastContainer></ToastContainer>
       </div>
     </div>
   );

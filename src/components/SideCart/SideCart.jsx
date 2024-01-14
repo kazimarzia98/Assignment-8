@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+
+
 
 const SideCart = ({readTime , markedBlog}) => {
 
@@ -14,7 +17,7 @@ useEffect(()=>{
 
     for(const bookMark of markedBlog){
         localStorage.setItem("added" , bookMark);
-    
+        
     }
 
     return (
