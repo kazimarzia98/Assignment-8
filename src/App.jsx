@@ -4,13 +4,14 @@ import Blogs from './components/Blogs/Blogs';
 import SideCart from './components/SideCart/SideCart';
 
 const App = () => {
-  const [mark , setMark] =useState('');
   const [readTime, setReadTime] = useState('');
 
+  const [markedBlog , setMarkedBlog ] = useState([]);
+
+  // for spent times
   const handleReadingTime = (time) => {
     const previousReadingTime = JSON.parse(localStorage.getItem("watchTime"));
-    // console.log(previousReadingTime);
-    // console.log(time);
+
     if (previousReadingTime) {
       const sum = previousReadingTime + time;
       localStorage.setItem("watchTime", sum);
@@ -23,21 +24,13 @@ const App = () => {
     }
   }
 
+  // for bookmark 
   const handleBookmark = (bookMark) => {
-    const previousBookmark = localStorage.getItem('bookMarked');
-    // console.log(previousBookmark);
-    // console.log('marked');
-    if(previousBookmark){
-      const newBookmark = [previousBookmark , bookMark];
-      // console.log(newBookmark);
-      localStorage.setItem("bookMarked", newBookmark);
-      setMark(newBookmark);
-      
-    }
-    else{
-       localStorage.setItem('bookMarked', bookMark);
-       setMark(bookMark);
-    }
+    // setMarkedBlog(boorMark);
+    const newMarked = [...markedBlog , bookMark];
+    setMarkedBlog(newMarked);
+
+
   }
 
 
@@ -49,7 +42,7 @@ const App = () => {
           <Blogs handleReadingTime={handleReadingTime} handleBookmark={handleBookmark}></Blogs>
         </div>
         <div className='sideCart'>
-          <SideCart readTime={readTime} mark={mark}></SideCart>
+          <SideCart readTime={readTime} markedBlog={markedBlog}></SideCart>
         </div>
       </div>
     </div>
